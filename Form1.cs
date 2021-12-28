@@ -23,7 +23,7 @@ namespace MusicPlayer2
 
             foreach (string fn in fileNames)
             {
-                if (Path.GetFileName(fn).Contains(textBox1.Text))
+                if (Path.GetFileName(fn).Contains(searchBox.Text))
                 {
                     //do something with fn
                 }
@@ -161,7 +161,7 @@ namespace MusicPlayer2
 
         private void pictureBox1Event(object sender, EventArgs e)
         {
-            pictureBox1.Image = Properties.Resources.inkedpsyHole;
+            pictureBox.Image = Properties.Resources.inkedpsyHole;
         }
     }
 }
